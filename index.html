@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/09964267af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/google-logo-transparent.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Achievement</a></li>
+                    <li><a href="#portfolio">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi, I'm <br><span>Mehjabin Hossain</span></h1>
+                <br>
+                <h6>As a tech enthusiast with diverse certifications in cutting-edge technology <br>I thrive on discovering novel concepts and crafting innovative solutions. <br>My passion for exploring new ideas drives me to push boundaries and embrace <br>challenges ultimately contributing to the ever-evolving landscape of technology.</h6>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------About------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/meh.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br><p>I am a focused and driven individual who
+                        thrives on challenge and innovation. I have a
+                        strong work ethic and a commitment to
+                        excellence in every project I undertake. I
+                        believe in being honest and ethical in all my
+                        interactions and fostering a culture of trust
+                        and collaboration.</p>
+                        
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><br>Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')"><br>Experience</p>
+                        <p class="tab-links" onclick="opentab('education')"><br>Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        
+                        <h3 ><span>On-Page SEO</span></h3>
+                    <ul>
+                        <li>
+                            Meta title and description<br>
+                            Keyword density<br> 
+                            Internal Linking Management
+
+                        </li><br>
+                    </ul>
+
+                    <h3>Off-Page SEO</h3>
+                    <ul>
+                        <li>
+                           Guest Post<br>
+                            Resource page <br>
+                            Brand mention backlink <br>
+                            Broken link building
+                        </li><br>
+                    </ul>
+                    <h3>Technical Error Fix</h3>
+                    <ul>
+                        <li>
+                          4xx Error<br>
+                            5xx Error<br>
+                            HTML ratio fix error
+                        </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>SEO Analyst at BD Plus IT</li>
+                            <li><span>2019 - 2020</span><br>SEO Administrator AZ Simple Solution</li>
+                            <li><span>2022 - Current</span><br>HR Information Systems (HRIS) Manager at BD Plus IT</li>
+                            <li><span>2019 - 2021</span><br>HR Manager at AZ Simple Solution</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>-2022-</span><br>University of Asia Pacific
+                                <br>Bachelor of Science in CSE</li>
+                            <li><span>-2019-</span><br>Ideal school and college
+                                <br>
+                                HSC
+                                </li>
+                            <li><span>-2016-</span><br>Ideal school and college
+                                <br>
+                                SSC</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------Achievement------------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Achievement</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <img src="image/ux2.jpeg" alt="bits"><br>
+                    <h3>UX Design Process: Empathize, Define, and Ideate</h3>
+                    <p><br><br><br>This course guides you through the foundational steps of UX design. Through practical exercises, you'll learn to understand user perspectives and generate innovative ideas to address user challenges effectively.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/N8PBNG5SU8XB">See Certification</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-server"></i>
+                    <img src="image/images/bitsofpc.jpeg" alt="bits"><br>
+                    <h3>The Bits and Bytes of Computer Networking</h3>
+                    <p><br><br><br>This course provides a comprehensive overview of networking concepts, protocols, and technologies, enabling learners to understand the fundamental principles underlying modern computer networks.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/R6AFB7HDEXXD">See Certification</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <img src="image/images/ux3.jpeg" alt="bits"><br><br>
+                    <h3> Foundations of User Experience (UX) Design</h3>
+                    <p><br><br><br>This is the introduction to the principles, processes, and methodologies of UX design, equipping participants with essential knowledge and skills to create intuitive, user-centered digital experiences.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/HB3TJB9JH95K">See Certification</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-microchip"></i>
+                    <img src="image/images/tec2.jpeg" alt="bits"><br>
+                    <h3>Technical Support Fundamentals</h3>
+                    <p><br><br><br>Providing a thorough understanding of essential concepts and skills necessary for effective technical support roles, covering troubleshooting techniques, customer communication strategies, and problem-solving methodologies.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/CJJ2BV87AVQS">See Certification</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------portofolio------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Hobbies</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/images/food.jpg">
+                    <div class="layer">
+                        <h2>Exploring Resturants</h2><br>
+                        <p>I love exploring restaurants and trying new foods including Thai, Indian, and Japanese cuisines.It's a delicious journey of discovery! Also love to do food photography</p>
+                      
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/images/mehubaby9.jpg">
+                    <div class="layer">
+                        <h2>Mirror's Muse</h2><br>
+                        <p>With a passion for self-expression I enjoy experimenting with makeup and love snapping photos to capture my favorite looks. It's all about expressing myself and feeling confident!</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/images/mehubaby10.jpg">
+                    <div class="layer">
+                        <h2>Exploring Places</h2><br>
+                        <p>I love visiting new places and dream of traveling the world one day. Exploring different cultures and sights fills me with excitement and wonder.</p>
+                        
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+  <!---------------------contact----------------->
+   <div id="contact">
+
+   <div class="container">
+        <div class="row">
+            <div id="contact-left">
+               
+                <h1 class="sub-title">Contact Me</h1>
+                <br>
+                <br>
+                <br>
+                <p><i class="fa-solid fa-paper-plane"></i>21201004@uap-bd.edu</p>
+                <br>
+                <p><i class="fa-sharp fa-solid fa-phone-volume"></i></i>01521111289</p>
+                <br><br><div class="social-icons">
+                 <a href="https://www.linkedin.com/in/mehjabin-hossain/"><i class="fa-brands fa-linkedin"></i> </a>
+                 <a href="https://www.facebook.com/slashymehu/"><i class="fa-brands fa-facebook"></i></i> </a>
+                 <a href="https://www.instagram.com/yellow_minance_23?igsh=MW56OXJ3ejA1cjliNQ%3D%3D&utm_source=qr "><i class="fa-brands fa-instagram"></i></i> </a>
+                 <a href="https://github.com/mehjabinhossain"><i class="fa-brands fa-github"></i></i> </a>
+                </div>
+                <br><br>
+                `
+                <a href="image/hr cv.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+
+            <div id="contact-right">
+                <form>
+                  <input type="text" name="Name" placeholder="Your Name" required>  
+                  <input type="email" name="email" placeholder="Your email" required>
+                   
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+
+
+            </div>
+        </div>  
+
+   </div>
+    <div class="copyright">
+        <p>This is my friend's website.<br> Go check this out: <a href="http://www.yourfriendswebsite.com" target="_blank">Your Friend's Website</a></p>
+
+       <p>Mehjabin's <i class="fa-solid fa-heart"></i>portfolio</p> 
+
+    </div>
+   </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu()
+    {
+        sidemenu.style.right="0";
+
+    }
+    function closemenu()
+    {
+        sidemenu.style.right="-200px";
+        
+    }
+
+</script>
+</body>
+</html>
