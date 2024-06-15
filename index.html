@@ -6,6 +6,11 @@
     <title>Personal Portofolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/09964267af.js" crossorigin="anonymous"></script>
+
+    
+
+
+
 </head>
 <body>
     <div id="header">
@@ -31,103 +36,172 @@
         </div>
     </div>
     <!-- -------------------------About------------------ -->
+   
+
+    <title>About Me</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #about .container {
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #dbe7d4;
+            box-shadow: 0 0 15px rgba(138, 20, 20, 0.2);
+            border-radius: 10px;
+        }
+        #about .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #about .about-col-1 img {
+            max-width: 90%;
+            border-radius: 20px;
+        }
+        #about .about-col-2 {
+            flex: 1;
+            margin-left: 20px;
+            font-family: 'Calibri', sans-serif; /* Set font to Calibri for the about section */
+        }
+        #about .sub-title {
+            font-family: 'Ariel',sans-serif; /* Set font to Calibri for the sub-title */
+            font-size: 2em;
+            color: #333;
+        }
+        #about .tab-titles {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        #about .tab-links {
+            cursor: pointer;
+            padding: 10px;
+            background: #f4f4f4;
+            border-radius: 5px;
+            transition: background 0.4s;
+        }
+        #about .tab-links:hover, #about .tab-links.active-link {
+            background: #01762d;
+            color: #fff;
+        }
+        #about .tab-contents {
+            display: none;
+        }
+        #about .tab-contents.active-tab {
+            display: block;
+        }
+        #about .tab-contents ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #about .tab-contents ul li {
+            margin-bottom: 10px;
+        }
+        #about .tab-contents h3, #about .tab-contents h1, #about .tab-contents h2 {
+            font-family: 'Merriweather', serif;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="image/meh.jpg">
+                    <img src="image/meh.jpg" alt="About Me">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <br><p>I am a focused and driven individual who
-                        thrives on challenge and innovation. I have a
-                        strong work ethic and a commitment to
-                        excellence in every project I undertake. I
-                        believe in being honest and ethical in all my
-                        interactions and fostering a culture of trust
-                        and collaboration.</p>
-                        
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>I am a focused and driven individual who thrives on challenge and innovation. I have a strong work ethic and a commitment to excellence in every project I undertake. I believe in being honest and ethical in all my interactions and fostering a culture of trust and collaboration.</p>
+                    <br>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')"><br>Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')"><br>Experience</p>
-                        <p class="tab-links" onclick="opentab('education')"><br>Education</p>
+                        <p class="tab-links active-link" onclick="openTab('education')">Education</p>
+                        <p class="tab-links" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('educator')">Educator</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        
-                        <h3 ><span>On-Page SEO</span></h3>
-                    <ul>
-                        <li>
-                            Meta title and description<br>
-                            Keyword density<br> 
-                            Internal Linking Management
-
-                        </li><br>
-                    </ul>
-
-                    <h3>Off-Page SEO</h3>
-                    <ul>
-                        <li>
-                           Guest Post<br>
-                            Resource page <br>
-                            Brand mention backlink <br>
-                            Broken link building
-                        </li><br>
-                    </ul>
-                    <h3>Technical Error Fix</h3>
-                    <ul>
-                        <li>
-                          4xx Error<br>
-                            5xx Error<br>
-                            HTML ratio fix error
-                        </li>
+                    <div class="tab-contents active-tab" id="education">
+                        <h3>Education</h3>
+                        <ul>
+                            <li><span>-2022-</span><br>University of Asia Pacific<br>Bachelor of Science in CSE</li>
+                            <li><span>-2019-</span><br>Ideal school and college<br>HSC</li>
+                            <li><span>-2016-</span><br>Ideal school and college<br>SSC</li>
                         </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <h3>On-Page SEO</h3>
+                        <ul>
+                            <li>Meta title and description</li>
+                            <li>Keyword density</li>
+                            <li>Internal Linking Management</li>
+                        </ul>
+                        <h3>Off-Page SEO</h3>
+                        <ul>
+                            <li>Guest Post</li>
+                            <li>Resource page</li>
+                            <li>Brand mention backlink</li>
+                            <li>Broken link building</li>
+                        </ul>
+                        
                     </div>
                     <div class="tab-contents" id="experience">
+                        <h3>Experience</h3>
                         <ul>
-                            <li>
-                                <span>2023 - Current</span><br>
-                                SEO Analyst at <a href="https://bdplusit.com/">BD Plus IT</a>
-                            </li>
-                            
-                            <li>
-                                <span>2019 - 2020</span><br>
-                                SEO Administrator at <a href="https://www.azsimplesolution.com/">AZ Simple Solution</a>
-                            </li>
-                            <li>
-                                <span>2022 - Current</span><br>
-                                HR Information Systems (HRIS) Manager at <a href="https://bdplusit.com/">BD Plus IT</a>
-                            </li>
-                            
-                            <li>
-                                <span>2019 - 2021</span><br>
-                                HR Manager at <a href="https://www.azsimplesolution.com/">AZ Simple Solution</a>
-                            </li>
-                            
+                            <li><span>2023 - Current</span><br>SEO Analyst at <a href="https://bdplusit.com/">BD Plus IT</a></li>
+                            <li><span>2019 - 2020</span><br>SEO Administrator at <a href="https://www.azsimplesolution.com/">AZ Simple Solution</a></li>
+                            <li><span>2022 - Current</span><br>HR Information Systems (HRIS) Manager at <a href="https://bdplusit.com/">BD Plus IT</a></li>
+                            <li><span>2019 - 2021</span><br>HR Manager at <a href="https://www.azsimplesolution.com/">AZ Simple Solution</a></li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>-2022-</span><br>University of Asia Pacific
-                                <br>Bachelor of Science in CSE</li>
-                            <li><span>-2019-</span><br>Ideal school and college
-                                <br>
-                                HSC
-                                </li>
-                            <li><span>-2016-</span><br>Ideal school and college
-                                <br>
-                                SSC</li>
+                    <div class="tab-contents" id="educator">
+                        <h1>RDM English School</h1>
+                        <h2>IELTS English Spoken Teacher</h2>
+                        <ul><p>Here my roles include---</p>
+                            <br>
+                            <li>Assessing Student Proficiency</li>
+                            <li>Curriculum Development</li>
+                            <li>Teaching and Instruction</li>
+                            <li>Providing Feedback</li>
+                            <li>Test Preparation Strategies</li>
                         </ul>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function openTab(tabName) {
+            var i;
+            var x = document.querySelectorAll("#about .tab-contents");
+            var tabLinks = document.querySelectorAll("#about .tab-links");
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.remove("active-tab");
+            }
+            for (i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active-link");
+            }
+            document.getElementById(tabName).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+    </script>
+    
+    
     <!-- ---------------- Achievement ------------------ -->
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Achievement</h1>
+            <h1 class="sub-title">My Achievement</h1><br><br><br>
+            <h2> Certification</h2>
             <div class="services-list">
+               
+
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <img src="image/ux2.jpeg" alt="bits"><br>
@@ -176,8 +250,6 @@
                     <div class="layer">
                         <h2>2'nd Runner Up</h2><br>
                         <p>IDEA Season 3.0, a business plan competition where students are encouraged to show their creative and innovative business ideas.</p>
-
-
                     </div>
                 </div>
                 
@@ -192,6 +264,9 @@
           
         </div>
     </div>
+    
+    
+
 
    <!------------------------portofolio--------------------->
    <div id="portfolio">
@@ -238,9 +313,9 @@
                 <br>
                 <br>
                 <br>
-                <p><i class="fa-solid fa-paper-plane"></i>21201004@uap-bd.edu</p>
+                <p><i class="fa-solid fa-paper-plane"></i>      mehjabinhossaineva@gmail.com  </p>
                 <br>
-                <p><i class="fa-sharp fa-solid fa-phone-volume"></i></i>01521111289</p>
+                <p><i class="fa-sharp fa-solid fa-phone-volume"></i></i>       +8801521111289</p>
                 <br><br><div class="social-icons">
                  <a href="https://www.linkedin.com/in/mehjabin-hossain/"><i class="fa-brands fa-linkedin"></i> </a>
                  <a href="https://www.facebook.com/slashymehu/"><i class="fa-brands fa-facebook"></i></i> </a>
@@ -249,7 +324,7 @@
                 </div>
                 <br><br>
                 `
-                <a href="image/hr cv.pdf" download class="btn btn2">Download CV</a>
+                <a href="image/cv.pdf" download class="btn btn2">Download CV</a>
 
             </div>
 
@@ -266,16 +341,6 @@
 
             </div>
         </div>  
-
-   </div>
-    <div class="copyright">
-        <p>This is my friend's website.<br> Go check this out: <a href="https://miraz6495.github.io/My_Portfolio/" target="_blank">Your Friend's Website</a></p>
-
-       <p>Mehjabin's <i class="fa-solid fa-heart"></i>portfolio</p> 
-
-    </div>
-   </div>
-
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
